@@ -11,8 +11,9 @@ public:
                 auto temp=mp.find(it);
                 int count= temp->second;
                 
-                string s(count,it);
-                    ans+=s;
+               // string s(count,it);
+                for(int i=0;i<count;i++)
+                    ans+=it;
                 
                 mp.erase(it);
             }
